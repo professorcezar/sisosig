@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sisosig" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Should I Go?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="per-Ia-kGP">
+                                <rect key="frame" x="20" y="44" width="374" height="69.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="58"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interrogation" translatesAutoresizingMaskIntoConstraints="NO" id="TVM-sd-UCu">
+                                <rect key="frame" x="20" y="261" width="374" height="374"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TVM-sd-UCu" secondAttribute="height" id="7j1-ob-hbu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="per-Ia-kGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="H1A-ge-1aY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="per-Ia-kGP" secondAttribute="trailing" constant="20" id="P1t-ul-Pox"/>
+                            <constraint firstItem="TVM-sd-UCu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WJl-B5-jkl"/>
+                            <constraint firstItem="TVM-sd-UCu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bMl-gx-0hI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TVM-sd-UCu" secondAttribute="trailing" constant="20" id="x0x-We-64l"/>
+                            <constraint firstItem="per-Ia-kGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xen-2a-enx"/>
+                            <constraint firstItem="TVM-sd-UCu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zbR-PX-xZj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="TVM-sd-UCu" id="0Xy-YG-11h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42.028985507246382" y="88.392857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="interrogation" width="296" height="296.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
